@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
 
-const InputColor = ({ label, color, onChange }) => {
+const InputColor = ({ id, color, onChange }) => {
   return (
     <div>
-      <label htmlFor="shapeColor">{label}</label>
       <input
-        id="shapeColor"
+        id={id}
         name="shapeColor"
         type="color"
         value={color}
@@ -17,7 +16,7 @@ const InputColor = ({ label, color, onChange }) => {
 };
 
 InputColor.propTypes = {
-  label: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
   color: PropTypes.any.isRequired,
   onChange: PropTypes.func.isRequired,
 };
