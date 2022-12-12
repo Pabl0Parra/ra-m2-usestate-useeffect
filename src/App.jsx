@@ -16,8 +16,6 @@ function App() {
   const [sizeCircle, setSizeCircle] = useState("");
   const [sizeSquare, setSizeSquare] = useState("10");
 
-  const [id, setId] = useState("");
-
   useEffect(() => {
     setSizeTriangle("50");
     setSizeCircle("80");
