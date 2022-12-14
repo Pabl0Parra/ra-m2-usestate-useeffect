@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-import InputSize from "./components/atoms/InputSize";
-import InputColor from "./components/atoms/InputColor";
 import Triangle from "./components/atoms/Triangle";
 import Circle from "./components/atoms/Circle";
 import Square from "./components/atoms/Square";
-import Label from "./components/atoms/Label";
+
+import InputNumberGroup from "./components/atoms/InputNumberGroup";
+import InputColorGroup from "./components/atoms/InputColorGroup";
 
 function App() {
   const [colorTriangle, setColorTriangle] = useState("#800000");
@@ -36,55 +36,64 @@ function App() {
         <strong>Exercise useState & useEffect.</strong>
       </h4>
       <div className="triangle">
-        <Label id="triangle-size" value="Triangle size:" />
-        <InputSize
+        <InputNumberGroup
+          htmlFor="triangle-size"
+          label="Triangle size:"
           id="triangle-size"
-          size={sizeTriangle}
+          value={sizeTriangle}
           onChange={(e) => setSizeTriangle(e.target.value)}
         />
         <br />
-        <Label id="triangle-color" value="Triangle color:" />
-        <InputColor
+        <InputColorGroup
+          htmlFor="triangle-color"
+          label="Triangle color:"
           id="triangle-color"
           color={colorTriangle}
           onChange={(e) => setColorTriangle(e.target.value)}
         />
+        <br />
         <Triangle size={sizeTriangle} color={colorTriangle} />
       </div>
       <br />
       <br />
       <div className="circle">
-        <Label id="circle-size" value="Circle size:" />
-        <InputSize
+        <InputNumberGroup
+          htmlFor="circle-size"
+          label="Circle size:"
           id="circle-size"
-          size={sizeCircle}
+          value={sizeCircle}
           onChange={(e) => setSizeCircle(e.target.value)}
         />
         <br />
-        <Label id="circle-color" value="Circle color:" />
-        <InputColor
-          id="circle-color:"
+        <InputColorGroup
+          htmlFor="circle-color"
+          label="Circle color:"
+          id="circle-color"
           color={colorCircle}
           onChange={(e) => setColorCircle(e.target.value)}
         />
+        <br />
         <Circle size={sizeCircle} color={colorCircle} />
       </div>
       <br />
       <br />
       <div className="square">
-        <Label id="square-size" value="Square size:" />
-        <InputSize
+        <InputNumberGroup
+          htmlFor="square-size"
+          label="Square size:"
           id="square-size"
-          size={sizeSquare}
+          value={sizeSquare}
           onChange={(e) => setSizeSquare(e.target.value)}
         />
         <br />
-        <Label id="square-color" value="Square color:" />
-        <InputColor
+        <InputColorGroup
+          htmlFor="square-color"
+          label="Square color:"
           id="square-color"
           color={colorSquare}
           onChange={(e) => setColorSquare(e.target.value)}
         />
+        <br />
         <Square size={sizeSquare} color={colorSquare} />
       </div>
     </div>

@@ -1,24 +1,25 @@
 import PropTypes from "prop-types";
 
-const InputSize = ({ id, size, onChange }) => {
+const InputNumber = ({ id, name, value, onChange }) => {
   return (
     <>
       <input
         id={id}
-        name="shapeSize"
+        name={name}
         type="number"
         style={{ width: "42px" }}
-        value={size}
+        value={value}
         onChange={onChange}
       />
     </>
   );
 };
 
-InputSize.propTypes = {
+InputNumber.propTypes = {
   id: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
-export default InputSize;
+export default InputNumber;
