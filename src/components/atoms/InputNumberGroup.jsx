@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import Label from "./Label";
 import InputNumber from "./InputNumber";
 
+// Este componente muevelo a la carpeta de components/molecules
 const InputNumberGroup = ({ id, value, onChange }) => {
   return (
     <>
@@ -9,6 +10,7 @@ const InputNumberGroup = ({ id, value, onChange }) => {
       <InputNumber
         id={id}
         name="shapeSize"
+        // Aquí le pasas el type, pero no lo necesita el componente.
         type="number"
         value={value}
         onChange={onChange}
