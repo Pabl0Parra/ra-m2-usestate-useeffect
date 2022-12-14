@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
 
+// Renombrar el componente a InputNumber para que sea más generico y reusable.
+// El name debería ser un prop, al igual que id.
+// El value debería de llamarse value.
 const InputSize = ({ id, size, onChange }) => {
   return (
     <>

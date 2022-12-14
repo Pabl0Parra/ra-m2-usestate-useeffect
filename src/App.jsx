@@ -36,6 +36,8 @@ function App() {
         <strong>Exercise useState & useEffect.</strong>
       </h4>
       <div className="triangle">
+        {/* Aquí estas agrupando Label + Input por cada forma */}
+        {/* Label e Input siempre van juntos. A nivel de Atoms crear componentes InputNumberGroup y InputColorGroup que los agrupe */}
         <Label id="triangle-size" value="Triangle size:" />
         <InputSize
           id="triangle-size"
