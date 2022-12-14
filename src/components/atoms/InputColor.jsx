@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 
-const InputColor = ({ id, color, onChange }) => {
+const InputColor = ({ id, name, color, onChange }) => {
   return (
     <div>
       <input
         id={id}
-        name="shapeColor"
+        name={name}
         type="color"
         value={color}
         style={{ width: "40px" }}

@@ -1,17 +1,12 @@
 import PropTypes from "prop-types";
-import Label from "./Label";
-import InputColor from "./InputColor";
+import Label from "../atoms/Label";
+import InputColor from "../atoms/InputColor";
 
-const InputColorGroup = ({ id, color, onChange }) => {
+const InputColorGroup = ({ id, name, color, onChange }) => {
   return (
     <>
       <Label htmlFor={id} label="Triangle color:" />
-      <InputColor
-        id="triangle-color"
-        name="triangle-color"
-        color={color}
-        onChange={onChange}
-      />
+      <InputColor id={id} name={name} color={color} onChange={onChange} />
     </>
   );
 };

@@ -6,7 +6,6 @@ const InputNumber = ({ id, name, value, onChange }) => {
       <input
         id={id}
         name={name}
-        type="number"
         style={{ width: "42px" }}
         value={value}
         onChange={onChange}

@@ -4,8 +4,8 @@ import Triangle from "./components/atoms/Triangle";
 import Circle from "./components/atoms/Circle";
 import Square from "./components/atoms/Square";
 
-import InputNumberGroup from "./components/atoms/InputNumberGroup";
-import InputColorGroup from "./components/atoms/InputColorGroup";
+import InputNumberGroup from "./components/molecules/InputNumberGroup";
+import InputColorGroup from "./components/molecules/InputColorGroup";
 
 function App() {
   const [colorTriangle, setColorTriangle] = useState("#800000");

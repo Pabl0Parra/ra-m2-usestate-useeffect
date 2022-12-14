@@ -1,18 +1,12 @@
 import PropTypes from "prop-types";
-import Label from "./Label";
-import InputNumber from "./InputNumber";
+import Label from "../atoms/Label";
+import InputNumber from "../atoms/InputNumber";
 
 const InputNumberGroup = ({ id, value, onChange }) => {
   return (
     <>
       <Label htmlFor={id} label="Triangle size:" />
-      <InputNumber
-        id={id}
-        name="shapeSize"
-        type="number"
-        value={value}
-        onChange={onChange}
-      />
+      <InputNumber id={id} name="shapeSize" value={value} onChange={onChange} />
     </>
   );
 };
