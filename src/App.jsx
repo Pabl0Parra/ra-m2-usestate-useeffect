@@ -38,7 +38,7 @@ function App() {
       <div className="triangle">
         <InputNumberGroup
           htmlFor="triangle-size"
-          label="Triangle size:"
+          title="Triangle size:"
           id="triangle-size"
           value={sizeTriangle}
           onChange={(e) => setSizeTriangle(e.target.value)}
@@ -46,7 +46,7 @@ function App() {
         <br />
         <InputColorGroup
           htmlFor="triangle-color"
-          label="Triangle color:"
+          title="Triangle color:"
           id="triangle-color"
           color={colorTriangle}
           onChange={(e) => setColorTriangle(e.target.value)}
@@ -59,7 +59,7 @@ function App() {
       <div className="circle">
         <InputNumberGroup
           htmlFor="circle-size"
-          label="Circle size:"
+          title="Circle size:"
           id="circle-size"
           value={sizeCircle}
           onChange={(e) => setSizeCircle(e.target.value)}
@@ -67,7 +67,7 @@ function App() {
         <br />
         <InputColorGroup
           htmlFor="circle-color"
-          label="Circle color:"
+          title="Circle color:"
           id="circle-color"
           color={colorCircle}
           onChange={(e) => setColorCircle(e.target.value)}
@@ -80,7 +80,7 @@ function App() {
       <div className="square">
         <InputNumberGroup
           htmlFor="square-size"
-          label="Square size:"
+          title="Square size:"
           id="square-size"
           value={sizeSquare}
           onChange={(e) => setSizeSquare(e.target.value)}
@@ -88,7 +88,7 @@ function App() {
         <br />
         <InputColorGroup
           htmlFor="square-color"
-          label="Square color:"
+          title="Square color:"
           id="square-color"
           color={colorSquare}
           onChange={(e) => setColorSquare(e.target.value)}

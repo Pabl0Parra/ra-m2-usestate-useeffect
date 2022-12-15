@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 
-const InputNumber = ({ id, name, value, onChange }) => {
+const InputNumber = ({ id, value, onChange }) => {
   return (
     <>
       <input
         id={id}
-        name={name}
+        name={id}
         style={{ width: "42px" }}
         value={value}
         onChange={onChange}
@@ -16,7 +16,6 @@ const InputNumber = ({ id, name, value, onChange }) => {
 
 InputNumber.propTypes = {
   id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
