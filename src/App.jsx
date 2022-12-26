@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
-
-import Triangle from "./components/atoms/Triangle";
-import Circle from "./components/atoms/Circle";
-import Square from "./components/atoms/Square";
-
-import InputNumberGroup from "./components/molecules/InputNumberGroup";
-import InputColorGroup from "./components/molecules/InputColorGroup";
+import { Circle, Triangle, Square } from "./components/atoms/index";
+import {
+  InputColorGroup,
+  InputNumberGroup,
+} from "./components/molecules/index";
 
 function App() {
   const [colorTriangle, setColorTriangle] = useState("#800000");
